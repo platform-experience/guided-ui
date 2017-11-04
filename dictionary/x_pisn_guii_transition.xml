@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Transition" max_length="40" name="x_pisn_guii_transition" type="collection">
+        <element label="Description" max_length="1024" name="description" type="string"/>
+        <element label="Flow" max_length="32" name="flow" reference="x_pisn_guii_flow" type="reference"/>
+        <element label="From" mandatory="true" max_length="32" name="from" reference="x_pisn_guii_screen" reference_qual="javascript:'flow=' + current.getValue('flow');" type="reference" use_reference_qualifier="advanced"/>
+        <element default="100" label="Order" max_length="40" name="order" type="integer"/>
+        <element default="(function flowTransition(responses) {&#13;&#10;&#13;&#10;&#9;// Your code here&#13;&#10;&#9;&#13;&#10;&#9;// Return true to match this transition&#13;&#10;&#9;// return true;&#13;&#10;&#13;&#10;&#9;return false;&#13;&#10;&#13;&#10;})(responses);" label="Script" mandatory="true" max_length="8000" name="script" type="script"/>
+        <element display="true" label="To" mandatory="true" max_length="32" name="to" reference="x_pisn_guii_screen" reference_qual="javascript:'flow=' + current.getValue('flow');" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="from"/>
+        </index>
+        <index name="index2">
+            <element name="to"/>
+        </index>
+        <index name="index3">
+            <element name="flow"/>
+        </index>
+    </element>
+</database>

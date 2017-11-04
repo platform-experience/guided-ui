@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Records" max_length="40" name="x_pisn_guii_records" type="collection">
+        <element dependent="record_table" dependent_on_field="record_table" label="Record" max_length="32" name="record" type="document_id" use_dependent_field="true"/>
+        <element label="Record table" max_length="40" name="record_table" type="string"/>
+        <element label="Response" max_length="32" name="response" reference="x_pisn_guii_response" type="reference"/>
+        <index name="index">
+            <element name="response"/>
+        </index>
+        <index name="index2">
+            <element name="record"/>
+        </index>
+    </element>
+</database>

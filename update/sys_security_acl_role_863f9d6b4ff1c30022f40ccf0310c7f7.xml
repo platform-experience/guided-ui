@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-20 05:58:29</sys_created_on>
+        <sys_id>863f9d6b4ff1c30022f40ccf0310c7f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_pisn_guii_records.x_pisn_guii.admin</sys_name>
+        <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+        <sys_security_acl display_value="x_pisn_guii_records">8e3f9d6b4ff1c30022f40ccf0310c7f4</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_863f9d6b4ff1c30022f40ccf0310c7f7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-20 05:58:29</sys_updated_on>
+        <sys_user_role display_value="x_pisn_guii.admin" name="x_pisn_guii.admin">7db79cfadb5983002a0a73b9bf9619f2</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

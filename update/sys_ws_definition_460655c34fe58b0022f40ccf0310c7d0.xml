@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ws_definition">
+    <sys_ws_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <base_uri>/api/x_pisn_guii/flow</base_uri>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_version>v1</default_version>
+        <doc_link/>
+        <enforce_acl/>
+        <is_versioned>true</is_versioned>
+        <name>Flow</name>
+        <namespace>x_pisn_guii</namespace>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <service_id>flow</service_id>
+        <short_description/>
+        <sys_class_name>sys_ws_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-06 05:46:03</sys_created_on>
+        <sys_id>460655c34fe58b0022f40ccf0310c7d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Flow</sys_name>
+        <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+        <sys_update_name>sys_ws_definition_460655c34fe58b0022f40ccf0310c7d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-06 05:46:26</sys_updated_on>
+    </sys_ws_definition>
+</record_update>

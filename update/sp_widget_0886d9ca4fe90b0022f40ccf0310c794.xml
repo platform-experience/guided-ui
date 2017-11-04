@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category/>
+        <client_script><![CDATA[function(FlowManager, $location, $scope, $timeout, spUtil) {
+	
+  var c = this,
+			g_form;
+	
+	FlowManager.init(c.data.flowSysID, c.server);
+	
+	c.getActionsVisible = FlowManager.getActionsVisible;
+	c.isLoading = FlowManager.getIsLoading;
+	
+	c.submit = function () {
+		if (c.data.screen.type === 'form') {
+
+			g_form.submit('sysverb_update_and_stay').then(function (response) {
+				if (response.isInsert) {
+					FlowManager.setRecord(response.sys_id, g_form.getTableName());
+					FlowManager.submit();
+				}
+			});	
+		} else {
+			FlowManager.submit();
+		}
+	};
+	
+	$scope.$on('spModel.gForm.initialized', function(e, gFormInstance) {
+		
+		if (gFormInstance.getTableName() == c.data.screen.form.table) {
+			
+			g_form = gFormInstance;
+			
+			$timeout(function () {
+				var responses = c.data.responses;
+				eval(c.data.screen.loadScript);
+			}, 0);
+			
+		}
+	});
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.actions {
+  margin: 10px 0;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>pi-flow</id>
+        <internal>false</internal>
+        <link/>
+        <name>Flow</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	
+	data.flowSysID = $sp.getParameter('sys_id');
+	data.sessionSysID = $sp.getParameter('session_id');
+	
+	var flowSession = new FlowSession(data.flowSysID);
+	
+	data.screen = flowSession.getCurrentScreen();
+	data.responses = flowSession.getResponses();
+	
+	data.loadingWidget = $sp.getWidget(flowSession.getFlow().getLoadingWidget());
+	
+	if (data.screen.type === 'widget') {
+		
+		var widgOptions = {
+			options: data.screen.options,
+			responses: data.responses
+		};
+		
+		data.screen.widget = $sp.getWidget(
+			data.screen.widget,
+			widgOptions
+			);
+	}
+	
+	if (data.screen.type === 'form') {
+		data.screen.form = $sp.getForm(data.screen.table, '-1');
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-03 03:13:49</sys_created_on>
+        <sys_id>0886d9ca4fe90b0022f40ccf0310c794</sys_id>
+        <sys_mod_count>176</sys_mod_count>
+        <sys_name>Flow</sys_name>
+        <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+        <sys_update_name>sp_widget_0886d9ca4fe90b0022f40ccf0310c794</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-23 22:45:28</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-if="!c.isLoading()">
+    <div ng-if="c.data.screen.type == 'widget'">
+      <sp-widget widget="c.data.screen.widget"></sp-widget>
+    </div>
+    <div ng-if="c.data.screen.type == 'form'">
+      <h1>{{c.data.screen.name}}</h1>
+      <sp-model form-model="c.data.screen.form" mandatory="true"></sp-model>
+    </div>
+    
+    <div ng-if="c.getActionsVisible()" class="actions">
+      <button type="button"
+              class="btn btn-default center-block"
+              ng-click="c.submit()">Next</button>
+    </div>
+  </div>
+  <div ng-show="c.isLoading()">
+    <sp-widget widget="c.data.loadingWidget"></sp-widget>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

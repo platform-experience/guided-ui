@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="aeca877a4f71830022f40ccf0310c793" sys_domain="global" table="rep$x_pisn_guii_flow" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-18 05:53:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a2ca877a4f71830022f40ccf0310c796</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="rep$x_pisn_guii_flow" name="rep$x_pisn_guii_flow" sys_domain="global" view="Default view">aeca877a4f71830022f40ccf0310c793</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_pisn_guii_flow" sys_domain="global" view="Default view">891a91024f2d0b0022f40ccf0310c75a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-18 05:53:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>rep$x_pisn_guii_flow</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-18 05:53:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aeca877a4f71830022f40ccf0310c793</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rep$x_pisn_guii_flow</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+            <sys_update_name>sys_ui_form_sections_aeca877a4f71830022f40ccf0310c793</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-18 05:53:01</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

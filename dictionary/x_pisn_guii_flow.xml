@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Flow" max_length="40" name="x_pisn_guii_flow" type="collection">
+        <element choice="1" label="End action" max_length="40" name="end_action" type="choice">
+            <choice>
+                <element label="Stay" sequence="0" value="stay"/>
+                <element label="Redirect to List" sequence="1" value="list"/>
+                <element label="Redirect to URL" sequence="2" value="url"/>
+                <element label="Redirect to Service Portal Page" sequence="3" value="page"/>
+            </choice>
+        </element>
+        <element label="Entry screen" max_length="32" name="entry_screen" reference="x_pisn_guii_screen" reference_qual="javascript:'flow=' + current.getUniqueValue();" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Loading widget" max_length="32" name="loading_widget" reference="sp_widget" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Table" max_length="80" name="table" type="table_name"/>
+        <index name="index">
+            <element name="entry_screen"/>
+        </index>
+        <index name="index2">
+            <element name="loading_widget"/>
+        </index>
+    </element>
+</database>

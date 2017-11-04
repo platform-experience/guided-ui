@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Transition" language="en" table="x_pisn_guii_transition">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Transition</label>
+            <language>en</language>
+            <name>x_pisn_guii_transition</name>
+            <plural>Transitions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>dylan.lindgren</sys_created_by>
+            <sys_created_on>2017-09-22 20:22:15</sys_created_on>
+            <sys_id>fd68943edb5983002a0a73b9bf9619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Transition</sys_name>
+            <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+            <sys_update_name>sys_documentation_x_pisn_guii_transition__en</sys_update_name>
+            <sys_updated_by>dylan.lindgren</sys_updated_by>
+            <sys_updated_on>2017-09-22 20:22:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

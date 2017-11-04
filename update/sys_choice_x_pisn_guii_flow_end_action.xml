@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="end_action" table="x_pisn_guii_flow" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>end_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Stay</label>
+            <language>en</language>
+            <name>x_pisn_guii_flow</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-12 04:25:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>884d7ff04f3d4f0022f40ccf0310c705</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-12 04:25:56</sys_updated_on>
+            <value>stay</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>end_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Redirect to List</label>
+            <language>en</language>
+            <name>x_pisn_guii_flow</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-11 09:57:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d8ff3644ff94f00ab4450af0310c7e6</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-12 04:25:59</sys_updated_on>
+            <value>list</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>end_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Redirect to URL</label>
+            <language>en</language>
+            <name>x_pisn_guii_flow</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-11 09:57:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd8ff3644ff94f00ab4450af0310c7e7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-12 04:26:00</sys_updated_on>
+            <value>url</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>end_action</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Redirect to Service Portal Page</label>
+            <language>en</language>
+            <name>x_pisn_guii_flow</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-11 09:57:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd8ff3644ff94f00ab4450af0310c7e8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-12 04:26:01</sys_updated_on>
+            <value>page</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>end_action</element>
+            <name>x_pisn_guii_flow</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-11 09:57:07</sys_created_on>
+            <sys_id>29ed0468db568b00daa1752dbf961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>end_action</sys_name>
+            <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+            <sys_update_name>sys_choice_x_pisn_guii_flow_end_action</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-11 09:57:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

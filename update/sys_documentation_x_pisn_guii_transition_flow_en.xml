@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="flow" label="Flow" language="en" table="x_pisn_guii_transition">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>flow</element>
+            <help/>
+            <hint/>
+            <label>Flow</label>
+            <language>en</language>
+            <name>x_pisn_guii_transition</name>
+            <plural>Flows</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-09 03:00:04</sys_created_on>
+            <sys_id>1dec44cc4ffdcb0022f40ccf0310c793</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Flow</sys_name>
+            <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+            <sys_update_name>sys_documentation_x_pisn_guii_transition_flow_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-10-09 03:00:04</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

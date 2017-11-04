@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>sys_created_on</field>
+        <global>true</global>
+        <messages/>
+        <name>Set dot-walked ID fields as read-only</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	g_form.setReadOnly('to.id', true);
+	g_form.setReadOnly('from.id', true);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-12 04:50:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c29208c54f3d4f0022f40ccf0310c7a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set dot-walked ID fields as read-only</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Guided UI Interaction" source="x_pisn_guii">b547d0fadb5983002a0a73b9bf9619f4</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Guided UI Interaction">b547d0fadb5983002a0a73b9bf9619f4</sys_scope>
+        <sys_update_name>sys_script_client_c29208c54f3d4f0022f40ccf0310c7a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-12 04:50:09</sys_updated_on>
+        <table>x_pisn_guii_transition</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

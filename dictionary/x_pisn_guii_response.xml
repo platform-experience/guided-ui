@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Response" max_length="40" name="x_pisn_guii_response" type="collection">
+        <element default="{}" label="Data" max_length="4000" name="data" type="json"/>
+        <element calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;return current.session.getDisplayValue() + ' - ' + current.screen.getRefRecord().getValue('id');&#10;&#10;})(current);" display="true" label="Name" max_length="40" name="name" type="string" virtual="true"/>
+        <element default="javascript:current.session.getRefRecord().getValue('screen');" label="Screen" max_length="32" name="screen" reference="x_pisn_guii_screen" type="reference"/>
+        <element label="Session" max_length="32" name="session" reference="x_pisn_guii_session" reference_cascade_rule="delete" type="reference"/>
+        <element choice="1" default="in_progress" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="In Progress" sequence="0" value="in_progress"/>
+                <element label="Completed" sequence="1" value="completed"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="session"/>
+        </index>
+        <index name="index2">
+            <element name="screen"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Screen" max_length="40" name="x_pisn_guii_screen" type="collection">
+        <element label="Default next screen" max_length="32" name="default_next" reference="x_pisn_guii_screen" reference_qual="javascript:'flow=' + current.flow" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Flow" mandatory="true" max_length="32" name="flow" reference="x_pisn_guii_flow" type="reference"/>
+        <element label="ID" mandatory="true" max_length="20" name="id" type="string"/>
+        <element default="(function onLoad(g_form, responses) {&#13;&#10;&#13;&#10;&#9;// your code here&#13;&#10;&#13;&#10;})(g_form, responses);" label="Load script" max_length="8000" name="load_script" type="script"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element default="{}" hint="Options to provide the widget when it's placed on the page" label="Options" max_length="4000" name="options" type="json"/>
+        <element default="100" label="Order" max_length="40" name="order" type="integer"/>
+        <element attributes="allow_public" label="Table" max_length="80" name="table" type="table_name"/>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element label="Widget" sequence="0" value="widget"/>
+                <element label="Form" sequence="1" value="form"/>
+                <element label="Record Producer" sequence="2" value="rp"/>
+            </choice>
+        </element>
+        <element label="View" max_length="32" name="view" reference="sys_ui_view" type="reference"/>
+        <element label="Widget" max_length="32" name="widget" reference="sp_widget" type="reference"/>
+        <index name="index">
+            <element name="view"/>
+        </index>
+        <index name="index2">
+            <element name="widget"/>
+        </index>
+        <index name="index3">
+            <element name="default_next"/>
+        </index>
+        <index name="index4">
+            <element name="id"/>
+        </index>
+        <index name="index5">
+            <element name="flow"/>
+        </index>
+    </element>
+</database>

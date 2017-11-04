@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Session" max_length="40" name="x_pisn_guii_session" type="collection">
+        <element label="Flow" mandatory="true" max_length="32" name="flow" read_only="true" reference="x_pisn_guii_flow" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" mandatory="true" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.flow.getRefRecord().entry_screen" label="Screen" max_length="32" name="screen" reference="x_pisn_guii_screen" type="reference"/>
+        <element choice="1" default="in_progress" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element label="In Progress" sequence="0" value="in_progress"/>
+                <element label="Completed" sequence="1" value="completed"/>
+            </choice>
+        </element>
+        <element label="User" mandatory="true" max_length="32" name="user" read_only="true" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="screen"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+        <index name="index3">
+            <element name="flow"/>
+        </index>
+    </element>
+</database>
